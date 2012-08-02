@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77664BC2-02C4-4442-8004-F4AE990852F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuilderCode</RootNamespace>
+    <AssemblyName>BuilderCode</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon\0.jpg" />
+    <Content Include="Icon\00..bmp" />
+    <Content Include="Icon\00.ico" />
+    <Content Include="Icon\00.jpg" />
+    <Content Include="Icon\000.bmp" />
+    <Content Include="Icon\00副本.jpg" />
+    <Content Include="Icon\1.bmp" />
+    <Content Include="Icon\2.bmp" />
+    <Content Include="Icon\3.bmp" />
+    <Content Include="Icon\360安全浏览器.ico" />
+    <Content Include="Icon\4.bmp" />
+    <Content Include="Icon\AG00160_.GIF" />
+    <Content Include="Icon\ajax.gif" />
+    <Content Include="Icon\DBTABLE.GIF" />
+    <Content Include="Icon\folderopen.gif" />
+    <Content Include="Icon\Image.jpg" />
+    <Content Include="Icon\jonenet.bmp" />
+    <Content Include="Icon\new\1.bmp" />
+    <Content Include="Icon\new\2.bmp" />
+    <Content Include="Icon\Output.jpg" />
+    <Content Include="Icon\SqlServer.bmp" />
+    <Content Include="Icon\tIcon.ico" />
+    <Content Include="Icon\toolbtn_AddServer.Image.png" />
+    <Content Include="Icon\toolbtn_Connect.Image.png" />
+    <Content Include="Icon\toolBtn_Run.Image.png" />
+    <Content Include="Icon\toolBtn_SQL.Image.png" />
+    <Content Include="Icon\toolbtn_unConnect.Image.png" />
+    <Content Include="Icon\toolBtn_Word.Image.png" />
+    <Content Include="Icon\toolStripButton1.Image.png" />
+    <Content Include="Icon\toolStripButton2.Image.png" />
+    <Content Include="Icon\txt.gif" />
+    <Content Include="Icon\xml.png" />
+    <Content Include="Icon\上记录.bmp" />
+    <Content Include="Icon\下记录.bmp" />
+    <Content Include="Icon\保存.bmp" />
+    <Content Include="Icon\修改.bmp" />
+    <Content Include="Icon\删除.bmp" />
+    <Content Include="Icon\取消.bmp" />
+    <Content Include="Icon\启用帐簿.bmp" />
+    <Content Include="Icon\尾记录.bmp" />
+    <Content Include="Icon\建立新帐簿.bmp" />
+    <Content Include="Icon\搜索.bmp" />
+    <Content Include="Icon\新增.bmp" />
+    <Content Include="Icon\查询选择.bmp" />
+    <Content Include="Icon\计算.bmp" />
+    <Content Include="Icon\试算平衡.bmp" />
+    <Content Include="Icon\退出.bmp" />
+    <Content Include="Icon\选项OToolStripMenuItem.Image.png" />
+    <Content Include="Icon\首记录.bmp" />
+    <Content Include="Resources\toolBtn_Word.Image.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
