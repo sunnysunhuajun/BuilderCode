@@ -62,7 +62,6 @@
     <Compile Include="Core\TableInfo.cs" />
     <Compile Include="Core\ViewInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Core\SQLServerInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

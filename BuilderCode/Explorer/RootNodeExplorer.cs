@@ -12,7 +12,7 @@ namespace BuilderCode.Explorer
 
     public class RootNodeExplorer
     {
-        #region Instance
+        //#region Instance
         TreeNode rootNode;
 
         public void CreateSubNodes(TreeNode Node)
