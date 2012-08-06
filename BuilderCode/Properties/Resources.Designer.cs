@@ -60,24 +60,144 @@ namespace BuilderCode.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap aa {
+            get {
+                object obj = ResourceManager.GetObject("aa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap ajax {
+            get {
+                object obj = ResourceManager.GetObject("ajax", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_SP {
+            get {
+                object obj = ResourceManager.GetObject("btn_SP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_Tables {
+            get {
+                object obj = ResourceManager.GetObject("btn_Tables", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap btn_Views {
+            get {
+                object obj = ResourceManager.GetObject("btn_Views", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap CloseFolder {
+            get {
+                object obj = ResourceManager.GetObject("CloseFolder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Database {
+            get {
+                object obj = ResourceManager.GetObject("Database", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Function.
+        /// </summary>
+        internal static string Function {
+            get {
+                return ResourceManager.GetString("Function", resourceCulture);
+            }
+        }
+        
+        internal static System.Drawing.Bitmap network_server {
+            get {
+                object obj = ResourceManager.GetObject("network_server", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap OpenFolder {
+            get {
+                object obj = ResourceManager.GetObject("OpenFolder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SP.
+        /// </summary>
+        internal static string SP {
+            get {
+                return ResourceManager.GetString("SP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tables.
+        /// </summary>
+        internal static string Tables {
+            get {
+                return ResourceManager.GetString("Tables", resourceCulture);
+            }
+        }
+        
+        internal static System.Drawing.Bitmap toolbtn_AddServer_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolbtn_AddServer_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap toolBtn_Run_Image {
             get {
-                object obj = ResourceManager.GetObject("toolBtn_Run.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("toolBtn_Run_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         internal static System.Drawing.Bitmap toolBtn_SQL_Image {
             get {
-                object obj = ResourceManager.GetObject("toolBtn_SQL.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("toolBtn_SQL_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap toolbtn_unConnect_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolbtn_unConnect_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         internal static System.Drawing.Bitmap toolBtn_Word_Image {
             get {
-                object obj = ResourceManager.GetObject("toolBtn_Word.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("toolBtn_Word_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap toolStripButton2_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton2_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Views.
+        /// </summary>
+        internal static string Views {
+            get {
+                return ResourceManager.GetString("Views", resourceCulture);
             }
         }
     }

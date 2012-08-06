@@ -47,7 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBuilderCodeDockContent.cs" />
+    <Compile Include="BaseControl\SerialNumberDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseControl\SerialNumberDataGridView.Designer.cs">
+      <DependentUpon>SerialNumberDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Explorer\RootNodeExplorer.cs" />
+    <Compile Include="IBuilderCodeDockContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IBuilderCodeDockContent.Designer.cs">
       <DependentUpon>IBuilderCodeDockContent.cs</DependentUpon>
     </Compile>
@@ -136,14 +145,20 @@
     <Content Include="Icon\退出.bmp" />
     <Content Include="Icon\选项OToolStripMenuItem.Image.png" />
     <Content Include="Icon\首记录.bmp" />
+    <None Include="Resources\network-server.png" />
     <Content Include="Resources\toolBtn_Word.Image.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BuilderCode.AppServices\BuilderCode.AppServices.csproj">
+      <Project>{81771F8A-E490-44E5-99CB-8138EC42E56E}</Project>
+      <Name>BuilderCode.AppServices</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WinFormsUI\WinFormsUI.csproj">
       <Project>{C75532C4-765B-418E-B09B-46D36B2ABDB1}</Project>
       <Name>WinFormsUI</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

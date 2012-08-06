@@ -15,20 +15,5 @@ namespace BuilderCode
         {
             InitializeComponent();
         }
-
-        private void toolStripCreate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripQuery_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripButton3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

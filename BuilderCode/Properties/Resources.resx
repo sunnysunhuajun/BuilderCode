@@ -118,13 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="toolBtn_SQL.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ajax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\ajax.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CloseFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\toolStripButton1.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="network_server" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\network-server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\folderopen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_SP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_Tables" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\DBTABLE.GIF;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbtn_AddServer_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\toolbtn_AddServer.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolBtn_Run_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\toolBtn_Run.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolBtn_SQL_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icon\toolBtn_SQL.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="toolBtn_Word.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="toolbtn_unConnect_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\toolbtn_unConnect.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolBtn_Word_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icon\toolBtn_Word.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="toolBtn_Run.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icon\toolBtn_Run.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toolStripButton2_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\toolStripButton2.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_Views" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icon\3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Function" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="SP" xml:space="preserve">
+    <value>SP</value>
+  </data>
+  <data name="Tables" xml:space="preserve">
+    <value>Tables</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Views</value>
   </data>
 </root>

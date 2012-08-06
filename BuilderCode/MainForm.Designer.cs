@@ -109,7 +109,6 @@
             this.toolStripCreate.Name = "toolStripCreate";
             this.toolStripCreate.Size = new System.Drawing.Size(127, 22);
             this.toolStripCreate.Text = "Create Document";
-            this.toolStripCreate.Click += new System.EventHandler(this.toolStripCreate_Click);
             // 
             // toolStripSeparator1
             // 
@@ -123,7 +122,6 @@
             this.toolStripQuery.Name = "toolStripQuery";
             this.toolStripQuery.Size = new System.Drawing.Size(113, 22);
             this.toolStripQuery.Text = "Query Analyzer";
-            this.toolStripQuery.Click += new System.EventHandler(this.toolStripQuery_Click);
             // 
             // toolStripSeparator2
             // 
@@ -151,10 +149,9 @@
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton3.Image = global::BuilderCode.Properties.Resources.toolBtn_Run_Image;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Name = "toolStripRun";
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton3.Text = "toolStripRun";
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // menuStrip1
             // 
