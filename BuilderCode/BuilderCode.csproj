@@ -53,6 +53,18 @@
     <Compile Include="BaseControl\SerialNumberDataGridView.Designer.cs">
       <DependentUpon>SerialNumberDataGridView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Explorer\DatabaseTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Explorer\DatabaseTreeView.Designer.cs">
+      <DependentUpon>DatabaseTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Explorer\ExplorerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Explorer\ExplorerForm.Designer.cs">
+      <DependentUpon>ExplorerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Explorer\RootNodeExplorer.cs" />
     <Compile Include="IBuilderCodeDockContent.cs">
       <SubType>Form</SubType>

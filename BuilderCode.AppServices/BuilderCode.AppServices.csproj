@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Core\ColumnInfo.cs" />
     <Compile Include="Core\CoreData.cs" />
+    <Compile Include="Core\DatabaseCollection.cs" />
     <Compile Include="Core\DatabaseInfo.cs" />
     <Compile Include="Core\EnumOptionClass.cs" />
     <Compile Include="Core\FunctionInfo.cs" />
@@ -62,6 +63,8 @@
     <Compile Include="Core\TableInfo.cs" />
     <Compile Include="Core\ViewInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortableBindingList.cs" />
+    <Compile Include="SortCompare.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
