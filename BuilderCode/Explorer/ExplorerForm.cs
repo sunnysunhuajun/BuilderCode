@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using BuilderCode.AppServices.Core;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace BuilderCode.Explorer
 {
@@ -18,14 +19,36 @@ namespace BuilderCode.Explorer
             CoreData.CoreDataContent.PropertyChanged += new PropertyChangedEventHandler(CoreDataContent_PropertyChanged);
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            SetCurrentTreeViewNode();
+        }
+
         void CoreDataContent_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            if (e.PropertyName == CoreDataTypes.CurrentSelectedDatabase.ToString())
+            {
+                SetCurrentTreeViewNode();
+            }
         }
 
         private void SetCurrentTreeViewNode()
         {
+            TreeNode Node = CoreData.CoreDataContent[CoreDataTypes.CurrentSelectedDatabase] as TreeNode;
+            if (Node != null)
+            {
+                if (databaseTreeView1.Nodes.Count == 0 || databaseTreeView1.Nodes[0] != Node)
+                {
  
+                }
+            }
+        }
+
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            databaseTreeView1.Nodes.Clear();
+            base.OnClosing(e);
         }
     }
 }

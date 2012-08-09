@@ -19,10 +19,21 @@ namespace BuilderCode.AppServices.Core
         Function = 4
     }
 
+    public enum DatabaseStatusType
+    {
+        Running = 0,
+        Sleeping = 1,
+        Suspended = 2,
+        Background = 3,
+        Runnable = 4,
+        All = 5
+    }
+
     public enum CoreDataTypes
     {
         ALLTreeNode,
-        CurrentViewTreeNode,
+        CurrentViewedTreeNode,
+        CurrentSelectedDatabase,
         CurrentDockContent,
         ActiveDockPanel,
         ActiveDockContent,

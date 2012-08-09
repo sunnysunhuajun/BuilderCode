@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,6 +54,7 @@
     <Compile Include="BaseControl\SerialNumberDataGridView.Designer.cs">
       <DependentUpon>SerialNumberDataGridView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Explorer\DatabaseTreeNode.cs" />
     <Compile Include="Explorer\DatabaseTreeView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -65,7 +67,14 @@
     <Compile Include="Explorer\ExplorerForm.Designer.cs">
       <DependentUpon>ExplorerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Explorer\NodeSorter.cs" />
     <Compile Include="Explorer\RootNodeExplorer.cs" />
+    <Compile Include="SQLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQLForm.designer.cs">
+      <DependentUpon>SQLForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="IBuilderCodeDockContent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +89,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Explorer\ExplorerForm.resx">
+      <DependentUpon>ExplorerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLForm.resx">
+      <DependentUpon>SQLForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IBuilderCodeDockContent.resx">
       <DependentUpon>IBuilderCodeDockContent.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,7 +185,9 @@
       <Name>WinFormsUI</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Notify\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

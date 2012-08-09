@@ -6,10 +6,11 @@ using System.Linq;
 using System.Text;
 using BuilderCode.BaseControl;
 using System.Windows.Forms;
+using BuilderCode.AppServices.Core;
 
 namespace BuilderCode.Explorer
 {
-    //internal void
+    internal delegate void DatabaseSubTreeSelectionChangeEventHandler(DatabaseCollection collection);
     
     public partial class DatabaseTreeView : TreeView
     {
@@ -23,6 +24,16 @@ namespace BuilderCode.Explorer
             container.Add(this);
 
             InitializeComponent();
+        }
+
+        protected override void OnAfterSelect(TreeViewEventArgs e)
+        {
+            base.OnAfterSelect(e);
+            TreeNode node = e.Node;
+            if (node == null)
+                return;
+            DatabaseCollection database = node.Tag as DatabaseCollection;
+            CoreData.CoreDataContent[CoreDataTypes.CurrentSelectedDatabase] = database;
         }
     }
 }

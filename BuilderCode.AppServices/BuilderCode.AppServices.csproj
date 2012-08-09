@@ -55,6 +55,7 @@
     <Compile Include="Core\CoreData.cs" />
     <Compile Include="Core\DatabaseCollection.cs" />
     <Compile Include="Core\DatabaseInfo.cs" />
+    <Compile Include="Core\DatabaseXmlParser.cs" />
     <Compile Include="Core\EnumOptionClass.cs" />
     <Compile Include="Core\FunctionInfo.cs" />
     <Compile Include="Core\NotifiedDictionary.cs" />
