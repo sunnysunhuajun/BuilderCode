@@ -50,5 +50,11 @@ namespace BuilderCode.Explorer
             databaseTreeView1.Nodes.Clear();
             base.OnClosing(e);
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            SelectDatabaseForm form = new SelectDatabaseForm();
+            form.ShowDialog();
+        }
     }
 }

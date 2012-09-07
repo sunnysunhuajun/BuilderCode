@@ -53,14 +53,14 @@
   <ItemGroup>
     <Compile Include="Core\ColumnInfo.cs" />
     <Compile Include="Core\CoreData.cs" />
-    <Compile Include="Core\DatabaseCollection.cs" />
+    <Compile Include="Core\DataCollection.cs" />
     <Compile Include="Core\DatabaseInfo.cs" />
-    <Compile Include="Core\DatabaseXmlParser.cs" />
+    <Compile Include="Core\DataServerXmlParser.cs" />
     <Compile Include="Core\EnumOptionClass.cs" />
     <Compile Include="Core\FunctionInfo.cs" />
     <Compile Include="Core\NotifiedDictionary.cs" />
-    <Compile Include="Core\OracleInfo.cs" />
     <Compile Include="Core\SPInfo.cs" />
+    <Compile Include="Core\SQLServer.cs" />
     <Compile Include="Core\TableInfo.cs" />
     <Compile Include="Core\ViewInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

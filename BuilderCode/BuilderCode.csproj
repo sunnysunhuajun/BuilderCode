@@ -54,6 +54,22 @@
     <Compile Include="BaseControl\SerialNumberDataGridView.Designer.cs">
       <DependentUpon>SerialNumberDataGridView.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseControl\WaterMarkText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseControl\WaterMarkText.Designer.cs">
+      <DependentUpon>WaterMarkText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControl\WaterMarkTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseControl\WaterMarkTextBox.Designer.cs">
+      <DependentUpon>WaterMarkTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\ColseSystemCommand.cs" />
+    <Compile Include="Command\CommandBase.cs" />
+    <Compile Include="Command\CommandManager.cs" />
+    <Compile Include="Command\RefershTreeNodeCommand.cs" />
     <Compile Include="Explorer\DatabaseTreeNode.cs" />
     <Compile Include="Explorer\DatabaseTreeView.cs">
       <SubType>Component</SubType>
@@ -69,11 +85,11 @@
     </Compile>
     <Compile Include="Explorer\NodeSorter.cs" />
     <Compile Include="Explorer\RootNodeExplorer.cs" />
-    <Compile Include="SQLForm.cs">
+    <Compile Include="SelectDatabaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SQLForm.designer.cs">
-      <DependentUpon>SQLForm.cs</DependentUpon>
+    <Compile Include="SelectDatabaseForm.Designer.cs">
+      <DependentUpon>SelectDatabaseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="IBuilderCodeDockContent.cs">
       <SubType>Form</SubType>
@@ -89,11 +105,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQLServerForm.Designer.cs">
+      <DependentUpon>SQLServerForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Explorer\ExplorerForm.resx">
       <DependentUpon>ExplorerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SQLForm.resx">
-      <DependentUpon>SQLForm.cs</DependentUpon>
+    <EmbeddedResource Include="SelectDatabaseForm.resx">
+      <DependentUpon>SelectDatabaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IBuilderCodeDockContent.resx">
       <DependentUpon>IBuilderCodeDockContent.cs</DependentUpon>
@@ -111,7 +133,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SQLServerForm.resx">
+      <DependentUpon>SQLServerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="bin\Debug\BuilderCode.cfg">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

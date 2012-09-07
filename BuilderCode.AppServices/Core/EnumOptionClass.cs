@@ -5,13 +5,19 @@ using System.Text;
 
 namespace BuilderCode.AppServices.Core
 {
-    public enum SQLAuthTypes
+    public enum DataServerType
     {
-        Windows = 1,
-        SQLServer = 0
+        SQLServer=1,
+        Oracle=2
     }
 
-    public enum DatabaseType
+    public enum SQLAuthTypes
+    {
+        WindowsAuthentication= 1,
+        SQLServerAuthentication = 0
+    }
+
+    public enum DatabaseAttributeEumn
     {
         Tables = 1,
         Views = 2,
@@ -23,21 +29,23 @@ namespace BuilderCode.AppServices.Core
     {
         Running = 0,
         Sleeping = 1,
-        Suspended = 2,
-        Background = 3,
-        Runnable = 4,
-        All = 5
+        Stopped = 2,
+        Suspended = 3,
+        Background = 4,
+        Runnable = 5,
+        All = 6
     }
 
     public enum CoreDataTypes
     {
-        ALLTreeNode,
+        AllDatabaseTreeNode,
         CurrentViewedTreeNode,
         CurrentSelectedDatabase,
         CurrentDockContent,
         ActiveDockPanel,
         ActiveDockContent,
         ApplicationForm,
-        HasNewVersion
+        HasNewVersion,
+        HasServer
     }
 }

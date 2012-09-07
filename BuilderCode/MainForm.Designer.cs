@@ -112,7 +112,7 @@
             this.toolStripDataBase,
             this.toolStripDataTable,
             this.toolStripButton3});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(713, 25);
             this.toolStrip1.TabIndex = 1;
@@ -123,7 +123,7 @@
             this.toolStripCreate.Image = global::BuilderCode.Properties.Resources.toolBtn_Word_Image;
             this.toolStripCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCreate.Name = "toolStripCreate";
-            this.toolStripCreate.Size = new System.Drawing.Size(129, 22);
+            this.toolStripCreate.Size = new System.Drawing.Size(120, 22);
             this.toolStripCreate.Text = "Create Document";
             // 
             // toolStripSeparator1
@@ -136,29 +136,33 @@
             this.toolStripQuery.Image = global::BuilderCode.Properties.Resources.toolBtn_SQL_Image;
             this.toolStripQuery.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripQuery.Name = "toolStripQuery";
-            this.toolStripQuery.Size = new System.Drawing.Size(116, 22);
+            this.toolStripQuery.Size = new System.Drawing.Size(107, 22);
             this.toolStripQuery.Text = "Query Analyzer";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Visible = false;
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(66, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(58, 22);
             this.toolStripLabel1.Text = "DataBase:";
+            this.toolStripLabel1.Visible = false;
             // 
             // toolStripDataBase
             // 
             this.toolStripDataBase.Name = "toolStripDataBase";
             this.toolStripDataBase.Size = new System.Drawing.Size(121, 25);
+            this.toolStripDataBase.Visible = false;
             // 
             // toolStripDataTable
             // 
             this.toolStripDataTable.Name = "toolStripDataTable";
             this.toolStripDataTable.Size = new System.Drawing.Size(121, 25);
+            this.toolStripDataTable.Visible = false;
             // 
             // toolStripButton3
             // 
@@ -168,6 +172,7 @@
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton3.Text = "toolStripRun";
+            this.toolStripButton3.Visible = false;
             // 
             // menuStrip1
             // 
@@ -179,43 +184,43 @@
             this.helpToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(713, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(713, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem1
             // 
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(39, 21);
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem1.Text = "File";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(47, 21);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // dataToolStripMenuItem1
             // 
             this.dataToolStripMenuItem1.Name = "dataToolStripMenuItem1";
-            this.dataToolStripMenuItem1.Size = new System.Drawing.Size(47, 21);
+            this.dataToolStripMenuItem1.Size = new System.Drawing.Size(43, 20);
             this.dataToolStripMenuItem1.Text = "Data";
             // 
             // toolToolStripMenuItem
             // 
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(46, 21);
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.toolToolStripMenuItem.Text = "Tool";
             // 
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(47, 21);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem1.Text = "Help";
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 359);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 391);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(713, 22);
             this.statusStrip1.TabIndex = 2;
@@ -224,10 +229,10 @@
             // dockPanel1
             // 
             this.dockPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dockPanel1.Location = new System.Drawing.Point(0, 50);
+            this.dockPanel1.Location = new System.Drawing.Point(0, 49);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.RightToLeftLayout = true;
-            this.dockPanel1.Size = new System.Drawing.Size(713, 309);
+            this.dockPanel1.Size = new System.Drawing.Size(713, 342);
             dockPanelGradient1.EndColor = System.Drawing.SystemColors.ControlLight;
             dockPanelGradient1.StartColor = System.Drawing.SystemColors.ControlLight;
             autoHideStripSkin1.DockStripGradient = dockPanelGradient1;
@@ -235,7 +240,7 @@
             tabGradient1.StartColor = System.Drawing.SystemColors.Control;
             tabGradient1.TextColor = System.Drawing.SystemColors.ControlDarkDark;
             autoHideStripSkin1.TabGradient = tabGradient1;
-            autoHideStripSkin1.TextFont = new System.Drawing.Font("Microsoft YaHei", 9F);
+            autoHideStripSkin1.TextFont = new System.Drawing.Font("微软雅黑", 9F);
             dockPanelSkin1.AutoHideStripSkin = autoHideStripSkin1;
             tabGradient2.EndColor = System.Drawing.SystemColors.ControlLightLight;
             tabGradient2.StartColor = System.Drawing.SystemColors.ControlLightLight;
@@ -249,7 +254,7 @@
             tabGradient3.TextColor = System.Drawing.SystemColors.ControlText;
             dockPaneStripGradient1.InactiveTabGradient = tabGradient3;
             dockPaneStripSkin1.DocumentGradient = dockPaneStripGradient1;
-            dockPaneStripSkin1.TextFont = new System.Drawing.Font("Microsoft YaHei", 9F);
+            dockPaneStripSkin1.TextFont = new System.Drawing.Font("微软雅黑", 9F);
             tabGradient4.EndColor = System.Drawing.SystemColors.ActiveCaption;
             tabGradient4.LinearGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             tabGradient4.StartColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -278,9 +283,9 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 381);
+            this.ClientSize = new System.Drawing.Size(713, 413);
             this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);

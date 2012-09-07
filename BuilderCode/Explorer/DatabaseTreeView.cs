@@ -10,7 +10,7 @@ using BuilderCode.AppServices.Core;
 
 namespace BuilderCode.Explorer
 {
-    internal delegate void DatabaseSubTreeSelectionChangeEventHandler(DatabaseCollection collection);
+    internal delegate void DatabaseSubTreeSelectionChangeEventHandler(DataCollection collection);
     
     public partial class DatabaseTreeView : TreeView
     {
@@ -32,7 +32,7 @@ namespace BuilderCode.Explorer
             TreeNode node = e.Node;
             if (node == null)
                 return;
-            DatabaseCollection database = node.Tag as DatabaseCollection;
+            DataCollection database = node.Tag as DataCollection;
             CoreData.CoreDataContent[CoreDataTypes.CurrentSelectedDatabase] = database;
         }
     }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.ComponentModel;
+using BuilderCode.AppServices.Core;
+using System.Threading;
 
 namespace BuilderCode.Explorer
 {
@@ -19,9 +21,25 @@ namespace BuilderCode.Explorer
             set { selectNode = value; }
         }
 
+        public void AddDataServer(DatabaseAttributeEumn nodetype,string message,BindingList<T> data)
+        {
+            TreeNode node=this.Nodes[nodetype.ToString()];
+            TreeView treeview = node.TreeView;
+            if (treeview.Nodes != null && treeview.InvokeRequired)
+            {
+                treeview.BeginInvoke(new ThreadStart(delegate() { AddDataServer(nodetype, message, data); }),null);
+                return;
+            }
+            if (!node.Nodes.ContainsKey(message))
+            {
+ 
+            }
+        }
+
         public void SetRoot(BindingList<TreeNode> Data)
         {
             this.Tag = Data;
         }
+
     }
 }
