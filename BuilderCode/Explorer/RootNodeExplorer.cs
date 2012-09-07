@@ -21,6 +21,8 @@ namespace BuilderCode.Explorer
             if (Node == null)
                 return;
             this.rootNode = Node;
+            this.rootNode.ImageKey = "Data Servers";
+            this.rootNode.SelectedImageKey = "Data Servers";
             this.rootNode.Nodes.Clear();
 
             TreeNode TablesNode = new TreeNode(Resources.Tables);
@@ -76,6 +78,11 @@ namespace BuilderCode.Explorer
         public static TreeNode GetDataNode()
         {
             DatabaseTreeNode<SQLServer> servers = ((Dictionary<string, TreeNode>)CoreData.CoreDataContent[CoreDataTypes.AllDatabaseTreeNode])["All"] as DatabaseTreeNode<SQLServer>;
+            if (servers == null)
+                servers = new DatabaseTreeNode<SQLServer>();
+            BuildSubNodes(servers);
+            servers.Name = "All";
+            servers.Tag = "all";
             return servers;
         }
     }

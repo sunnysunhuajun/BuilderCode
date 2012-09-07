@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using BuilderCode.AppServices.Core;
 using WeifenLuo.WinFormsUI.Docking;
+using BuilderCode.Command;
 
 namespace BuilderCode.Explorer
 {
@@ -16,6 +17,10 @@ namespace BuilderCode.Explorer
         public ExplorerForm()
         {
             InitializeComponent();
+            new DataServerXmlParser().LoadXML();
+            CommandBase command = CommandManager.GetCommand(CommandFamily.Command_RefreshTreeNode);
+            command.Execute(null, null);
+            CoreData.CoreDataContent[CoreDataTypes.HasServer] = true;
             CoreData.CoreDataContent.PropertyChanged += new PropertyChangedEventHandler(CoreDataContent_PropertyChanged);
         }
 

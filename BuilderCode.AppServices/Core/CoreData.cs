@@ -32,10 +32,7 @@ namespace BuilderCode.AppServices.Core
         static void InitCoreData()
         {
             Dictionary<string, TreeNode> allNodes = new Dictionary<string, TreeNode>();
-            allNodes.Add("Completed", null);
-            allNodes.Add("New", null);
             allNodes.Add("All", null);
-            allNodes.Add("Last", null);
             //遍历枚举，添加到字典中
             foreach (CoreDataTypes Key in System.Enum.GetValues(typeof(CoreDataTypes)))
             {
